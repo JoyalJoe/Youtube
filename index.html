@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            padding-left: 120px;
+            padding-top: 100px;
+        }
+        p{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+    }
+
+    .pic1{
+      width: 300px;
+  
+      display: block;
+      padding-bottom: 20px;
+
+    }
+    .section1{
+        width: 300px;
+        display:inline-block;
+        vertical-align: top;
+    }
+    .section2{
+        width: 300px;
+        display:inline-block;
+        vertical-align: top;
+        margin-left: 15px;
+    }
+    .search{
+      font-size: ;  
+      display: inline-block;
+    }
+    .img-title1{
+        width: 250px;
+        margin-top: 0 ;
+    }
+    .img-title3{
+      font-family: "Roboto","Arial",sans-serif;
+       font-size: 1.2rem;
+       line-height: 1.8rem;
+       font-weight: 400;
+       margin-bottom: 2px;
+    }
+    .img-title2{
+        width: 250px;
+       
+        font-size: 14px;     
+        flex-basis: 1e-9px;
+       font-family: "Roboto","Arial",sans-serif;
+   
+    }
+    .channel-picture{
+       display: inline-block;
+       vertical-align: top;
+       width: 50px;
+    }
+    .video-info{
+        diaplay     
+        font-size: 16px;
+        flex=1;
+        
+    }
+    .profile-picture{
+        vertical-align: top;
+        border-radius: 40px;
+        width: 40px;
+    }
+    .video-info-grid{
+       display: grid;
+       grid-template-columns:50px 1fr ; 
+    }
+    .flex{
+        display: flex;
+    }
+    .header{
+        height: 70px;
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        background-color: white;
+
+    }
+    .left{
+        padding-left: 20px;
+    width: 250px;  
+  }
+    .middle{
+        flex: 1;
+        display: flex;
+        padding: 10px 80px;
+
+
+    }
+    .right{
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        width: 40px;
+        padding-top:10px ;
+    }
+    .youtube-logo{
+        width: 100px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    .search-box{
+        flex: 1;
+        height: 30px;
+        border-radius: 5px;
+        border: .2px;
+        border-color: black;
+        border-style: solid;
+    }
+    .search-button{
+        height: 36px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 5px;
+        border: .2px;
+        border-color: black;
+        border-style: solid;
+    }
+    .voice{
+        border-radius: 50%;
+        height: 40px;
+        margin-left: 30px;
+        border: 0px;
+    }
+    .right-icon{
+        width: 30px;
+    }
+    .side-bar{
+        position: fixed;
+        top: 100px;
+        width: 100px;
+        height: 100%;
+        
+    }
+    .side-icon{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+    .side-icon:hover{
+ background-color: rgb(168, 168, 168);    }
+    .side-icon p{
+        margin: 0px;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+           <img class="menu" src="Cover pictures youtube/icons/menu.svg">
+           <img class="youtube-logo" src="Cover pictures youtube/youtube-logo.svg">
+     
+        </div>
+        <div class="middle">
+            <input class="search-box" type="text">
+            <button class="search-button">
+                <img src="Cover pictures youtube/search.svg" width="30px">
+               </button>
+               <button class="voice" >
+                <img src="Cover pictures youtube/voice-search-icon.svg" width="30px">
+
+               </button>
+        </div>
+        <div class="right">
+      <img class="right-icon" src="Cover pictures youtube/upload.svg" alt="">
+      <img class="right-icon" src="Cover pictures youtube/youtube-apps.svg" alt="">
+      <img src="Cover pictures youtube/notifications.svg" class="right-icon">
+      <img class="right-icon" src="Cover pictures youtube/my-channel.jpeg">
+        </div>
+    </div>
+    <div class="side-bar">
+        <div class="side-icon">
+            <img src="Cover pictures youtube/home.svg" width="40px">
+            <p>
+                Menu
+            </p>
+        </div>
+        <div class="side-icon">
+            <img src="Cover pictures youtube/explore.svg" width="40px">
+            <p>
+            Explore
+            </p>
+        </div>
+        <div class="side-icon">
+            <img src="Cover pictures youtube/originals.svg" width="40px">
+            <p>
+             Originals
+            </p>
+
+        </div>
+        <div class="side-icon">
+            <img src="Cover pictures youtube/subscriptions.svg" width="40px">
+            <p>
+             Subs
+            </p>
+
+        </div>
+        <div class="side-icon">
+            <img src="Cover pictures youtube/youtube-music.svg" width="40px">
+            <p>
+                Music
+            </p>
+
+        </div>
+        <div class="side-icon">
+            <img src="Cover pictures youtube/library.svg" width="40px">
+            <p>
+                menu
+            </p>
+        </div>
+        
+    </div>
+    <div class="grid" >
+        <div class="section1">
+       
+            <div>
+           <img class="pic1" src="Cover pictures youtube/pic1.webp"> 
+           </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="Cover pictures youtube/icons/icon1.jpg">  
+                </div>
+                <div class="video-info">
+                    <p class="img-title1">Levi Very Angry to See His Girlfriend Kill by Titan | Levy Rage Mode vs 100,000 Titan</p>
+                    <p class="img-title3">Titan Fan
+                        •
+                        2.2M views</p>
+                    <p class="img-title2" >2,296,830 views  Dec 6, 2021  AMERIKA SERIKAT
+                        Levi Very Angry to See His Girlfriend Kill by Titan | Levy Rage Mode vs 100,000 Titan</p>  
+                </div>       
+            </div>
+            
+        </div>
+        <div class="section1">
+       
+            <div>
+           <img class="pic1" src="Cover pictures youtube/pic2.webp"> 
+           </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="Cover pictures youtube/icons/icon2.jpg">  
+                </div>
+                <div class="video-info">
+                    <p class="img-title1">Levi Very Angry to See His Girlfriend Kill by Titan | Levy Rage Mode vs 100,000 Titan</p>
+                    <p class="img-title3">Titan Fan
+                        •
+                        2.2M views</p>
+                    <p class="img-title2" >2,296,830 views  Dec 6, 2021  AMERIKA SERIKAT
+                        Levi Very Angry to See His Girlfriend Kill by Titan | Levy Rage Mode vs 100,000 Titan</p>  
+                </div>       
+            </div>
+            
+        </div>
+        <div class="section1">
+           
+            <div>
+           <img class="pic1" src="Cover pictures youtube/pic3.webp"> 
+           </div>
+            <div class="flex">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="Cover pictures youtube/icons/icon3.jpg">  
+                </div>
+                <div class="video-info">
+                    <p class="img-title1"> Build a Website in just 2 Minutes using ChatGPT</p>
+                    <p class="img-title3">
+                        coderfact
+                        658 subscribers</p>
+                    <p class="img-title2" >21 views  Jan 6, 2023
+                        Are you looking to build a website quickly and easily? Look no further! With ChatGPT, you can create a professional website in just 2 minutes.</p>  
+                </div>       
+            </div>
+            
+        </div> 
+        <div class="section1">
+           
+            <div>
+           <img class="pic1" src="Cover pictures youtube/pic4 - Copy.webp"> 
+           </div>
+            <div class="flex">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="Cover pictures youtube/icons/icon4.jpg">  
+                </div>
+                <div class="video-info">
+                    <p class="img-title1">7 Ways to Make a Conversation With Anyone | Malavika Varadan | TEDxBITSPilaniDubai</p>
+                    <p class="img-title3">
+                        TEDx Talks
+                        37.2M subscriber</p>
+                    <p class="img-title2" >22,719,730 views  Jan 11, 2016
+                        “We mustn’t speak to strangers.” Malavika Varadan, challenges this societal norm, by presenting 7 ways to make conversation with anyone.</p>  
+                </div>       
+            </div>
+            
+        </div>
+        <div class="section1">
+           
+            <div>
+           <img class="pic1" src="Cover pictures youtube/pic5.webp"> 
+           </div>
+            <div class="flex">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="Cover pictures youtube/icons/icon5.jpg">  
+                </div>
+                <div class="video-info">
+                    <p class="img-title1">7 Habits That Made Me A Multi-Millionaire By 21</p>
+                    <p class="img-title3">
+                        Iman Gadzhi
+                        1.57M subscribers </p>
+                    <p class="img-title2" >Out of the 7 Millionaire Habits, the one that people struggle the most with is Acquiring a High-Income Skill. That’s why I created this ultimate guide on how you to use a high-income skill to start a cashflow business that pays you $2,000 to $10,000/month</p>  
+               
+                </div>       
+            </div>
+            
+        </div>   
+
+
+    </div>
+    <div class="grid">
+    <div class="section1">
+           
+        <div>
+       <img class="pic1" src="Cover pictures youtube/pic6.webp"> 
+       </div>
+        <div class="flex">
+            <div class="channel-picture">
+                <img class="profile-picture" src="C\icons\icon6.jpg">  
+            </div>
+            <div class="video-info">
+                <p class="img-title1">Amazing Japanese Ramen that won the 1st place in Japan - Korean street food</p>
+                <p class="img-title3"> 
+                    seagull food
+                </p>
+                <p class="img-title2" >We, Seagull Food, are trying to introduce street food, fast food, dessert and snacks with tingle cooking ASMR and footag</p>  
+           
+            </div>       
+        </div>
+        
+    </div>   
+
+<div class="section1">
+           
+    <div>
+   <img class="pic1" src="Cover pictures youtube/pic7.webp"> 
+   </div>
+    <div class="flex">
+        <div class="channel-picture">
+            <img class="profile-picture" src="Cover pictures youtube/icons/icon7.jpg">  
+        </div>
+        <div class="video-info">
+            <p class="img-title1">Can I drill you?😂</p>
+            <p class="img-title3">
+                Abhi honeybee</p>
+            <p class="img-title2" >1,057,245 views  Feb 23, 2022</p>  
+       
+        </div>       
+    </div>
+    
+</div>   
+
+<div class="section1">
+           
+    <div>
+   <img class="pic1" src="Cover pictures youtube/pic8.webp"> 
+   </div>
+    <div class="flex">
+        <div class="channel-picture">
+            <img class="profile-picture" src="Cover pictures youtube/icons/icon8.jpg">  
+        </div>
+        <div class="video-info">
+            <p class="img-title1">    
+                Unprotected Sex- What to do | Dr Anjali Kumar </p>
+            <p class="img-title3">
+                Maitri
+            </p>
+            <p class="img-title2" >When the sex goes wrong...
+
+                Having sex without protection is risky. You are risking being pregnant, getting sexually transmitted infections and a lot of stress.</p>
+        </div>       
+    </div>
+    
+</div>   
+
+<div class="section1">
+           
+    <div>
+   <img class="pic1" src="Cover pictures youtube/pic9.webp"> 
+   </div>
+    <div class="flex">
+        <div class="channel-picture">
+            <img class="profile-picture" src="Cover pictures youtube/icons/icon9.jpg">  
+        </div>
+        <div class="video-info">
+            <p class="img-title1">intel's Smallest Gaming PC is here... it's Crazyy Powerful !! 🤩🔥</p>
+            <p class="img-title3">
+                Vimal Chintapatla 
+                @VimalChintapatlaTR   </p>
+            <p class="img-title2" >54K views  2 weeks ago  #CommissionsEarned #intel #gaming</p>  
+       
+        </div>       
+    </div>
+    
+</div>   
+
+<div class="section1">
+           
+    <div>
+   <img class="pic1" src="Cover pictures youtube/pic10.webp"> 
+   </div>
+    <div class="flex">
+        <div class="channel-picture">
+            <img class="profile-picture" src="Cover pictures youtube/icons/icon10.jpg">  
+            
+        </div>
+        <div class="video-info">
+            <p class="img-title1">how to HACK a password // password cracking with Kali Linux and HashCat</p>
+            <p class="img-title3">
+               
+       NetworkChuck
+        2.74M subscribers </p>
+            <p class="img-title2" >5,318,515 views  Aug 20, 2020  Learn Ethical Hacking (CEH Journey)</p>  
+       
+        </div>       
+    </div>
+    
+</div>   
+
+</div>
+<div class="grid" >
+    <div class="section1">
+   
+        <div>
+       <img class="pic1" src="Cover pictures youtube/pic11.webp"> 
+       </div>
+        <div class="video-info-grid">
+            <div class="channel-picture">
+                <img class="profile-picture" src="Cover pictures youtube/icons/icon11.jpg">  
+            </div>
+            <div class="video-info">
+                <p class="img-title1">Human's Digging For Oil At 10,000 Meters Under The Sea Accidentally Wakes Up The Sleeping Beast!</p>
+                <p class="img-title3">
+                    Science Fiction Club</p>
+                <p class="img-title2" >711,845 views  Nov 27, 2022</p>  
+            </div>       
+        </div>
+        
+    </div>
+ 
+    <div class="section1">
+       
+        <div>
+       <img class="pic1" src="Cover pictures youtube/pic13.webp"> 
+       </div>
+        <div class="flex">
+            <div class="channel-picture">
+                <img class="profile-picture" src="Cover pictures youtube/icons/icon13.jpg">  
+            </div>
+            <div class="video-info">
+                <p class="img-title1"> WE CAUGHT A NEW SPECIES OF GIANT GROUPER Scientific Report, Age And Eating</p>
+                <p class="img-title3">
+                    YBS Youngbloods</p>
+                <p class="img-title2" >Join Brodie, Jacko and Jarrad as the go deep sea fishing and jig up a monster grouper as a by catch!</p>  
+            </div>       
+        </div>
+        
+    </div> 
+    <div class="section1">
+       
+        <div>
+       <img class="pic1" src="Cover pictures youtube/pic14.webp"> 
+       </div>
+        <div class="flex">
+            <div class="channel-picture">
+                <img class="profile-picture" src="Cover pictures youtube/icons/icon14.jpg">  
+            </div>
+            <div class="video-info">
+                <p class="img-title1">Digestion of alcohol is not like other food|Males and females differ in metabolizing #alcohol</p>
+                <p class="img-title3">
+                   Dandelion Medical Animation</p>
+                <p class="img-title2" >Digestion of alcohol is not like the other food. Once alcohol is swallowed, a small amount is absorbed directly by the tongue and mucosal lining of the mouth</p>  
+            </div>       
+        </div>
+        
+    </div>
+    <div class="section1">
+       
+        <div>
+       <img class="pic1" src="Cover pictures youtube/pic15.webp"> 
+       </div>
+        <div class="flex">
+            <div class="channel-picture">
+                <img class="profile-picture" src="Cover pictures youtube/icons/icon15.jpg">  
+            </div>
+            <div class="video-info">
+                <p class="img-title1">𝗦𝘂𝗽𝗲𝗿 𝗦𝗮𝗶𝘆𝗮𝗻 𝗜𝗻𝗳𝗶𝗻𝗶𝘁𝘆 𝗚𝗼𝗸𝘂 𝘃𝘀. 𝗧𝗿𝘂𝗲 𝗙𝗼𝗿𝗺 𝗗𝗮𝗶𝘀𝗵𝗶𝗻𝗸𝗮𝗻</p>
+                <p class="img-title3">
+                    Lord Aizen  </p>
+                <p class="img-title2">9,920,908 views  Premiered May 14, 2022  #LordAizenAnimations</p>
+            </div>       
+        </div>
+        
+    </div>   
+    <div class="section1">
+       
+        <div>
+       <img class="pic1" src="Cover pictures youtube/pic12.webp"> 
+       </div>
+        <div class="flex">
+            <div class="channel-picture">
+                <img class="profile-picture" src="Cover pictures youtube/icons/icon12.jpg">  
+            </div>
+            <div class="video-info">
+                <p class="img-title1">𝗦𝘂𝗽𝗲𝗿 𝗦𝗮𝗶𝘆𝗮𝗻 𝗜𝗻𝗳𝗶𝗻𝗶𝘁𝘆 𝗚𝗼𝗸𝘂 𝘃𝘀. 𝗧𝗿𝘂𝗲 𝗙𝗼𝗿𝗺 𝗗𝗮𝗶𝘀𝗵𝗶𝗻𝗸𝗮𝗻</p>
+                <p class="img-title3">
+                    Lord Aizen  </p>
+                <p class="img-title2">9,920,908 views  Premiered May 14, 2022  #LordAizenAnimations</p>
+            </div>       
+        </div>
+        
+    </div>   
+
+
+
+
+</body>
+</html>
